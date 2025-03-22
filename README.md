@@ -52,7 +52,7 @@ Here’s how it works:
 In summary, ‘self-learning’ is just the model figuring out how to adjust itself based on its errors so it can make better predictions in the future.”
 
 
-# Task2
+# Task 2
 ## Transformer Model Overview
 
 This notebook implements a **Transformer-based sequence reversal model**. The model takes a numerical sequence as input and predicts its reversed version. Below is an overview of the key components:
