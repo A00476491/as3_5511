@@ -33,22 +33,23 @@ Forward propagation and backpropagation are implemented. During the training pro
 **Neural Network Accuracy: 0.9905**
 
 
-## Explaining "Self-Learning" to Your Boss
-Here’s how you might explain the concept of “self-learning” in the context of backpropagation to someone unfamiliar with neural networks:
+## Explaining "Self-Learning" to my Boss
 
 **Explanation:**
 
-“In a neural network, the term ‘self-learning’ refers to the process of the model improving itself over time by learning from its mistakes. Here’s how it works:
+“In a neural network, ‘self-learning’ refers to the process of the model improving it's output on it's own based on it's past mistakes or experiences, just like human beings. 
 
-**Initial Guess:** The neural network starts by making an initial prediction (which is often wrong). This is based on random weights assigned at the beginning.
+Here’s how it works:
 
-**Error Calculation:** After making the prediction, the network compares the prediction to the actual answer (the label). It calculates how wrong the prediction was, and this difference is called the error.
+**Initial Guess:** The neural network starts by making an initial prediction (which could be wrong). This is based on the random weights assigned to it's inputs at the beginning.
 
-**Learning from Mistakes (Backpropagation):** The network uses a method called backpropagation to adjust its weights. It essentially asks, ‘Which weights caused the biggest errors?’ and adjusts those weights to reduce the error in future predictions.
+**Error Calculation:** After that, the network compares it's perdiction with the correct answer (often referred to as label), and calculates the deviation, which is the error. 
 
-**Iteration:** The network repeats this process many times, gradually improving its predictions as it ‘learns’ from its past mistakes. The more data it sees, the better it becomes at making accurate predictions.
+**Learning from Mistakes (Backpropagation):** After calculating the error, the network goes through a process of back propagation which means figuring out the weights that might have cause the biggest deviation, and adjusting that accordingly to reduce error. This is learning from past mistakes.
 
-In summary, ‘self-learning’ is just the model figuring out how to adjust itself based on its errors so it can predict better in the future.”
+**Iteration:** As the model repeats this process many times, it fine tunes it's parameters and weights, improving the accuracy of it's results over time. 
+
+In summary, ‘self-learning’ is just the model figuring out how to adjust itself based on its errors so it can make better predictions in the future.”
 
 
 # Task2
