@@ -93,3 +93,5 @@ This notebook implements a **Transformer-based sequence reversal model**. The mo
 - **Multi-Head Self-Attention:** Enables the model to focus on different parts of the input sequence.
 - **Feedforward Network (FFN):** Applies a two-layer neural network with a ReLU activation function.
 - **fully connected linear layer** maps the encoder output to logits.
+
+Model Structure shown in **transformer_view.pdf**
