@@ -1,8 +1,9 @@
-# Logistic regression model:
+# Task 1
+## Logistic regression model:
 
 This part uses the binary classification model - logistic regression as the benchmark model. I first put the data of the training set into the logistic regression model and let the model automatically find the most suitable straight line. Next, I applied the trained model to the test data to observe the accuracy of the prediction, so as to obtain a benchmark accuracy. This provides a reference benchmark for the results obtained by the subsequent neural network.
 
-# Single-layer neural network:
+## Single-hidden-layer neural network:
 
 Forward propagation and backpropagation are implemented. During the training process, I let the model continuously adjust the weights and biases to reduce the prediction error. From the training log, as the epoch increases, the loss (Loss) drops rapidly from 0.6127 to 0.0529, indicating that the model is gradually converging. At the same time, I used a dynamic learning rate (learning rate decay) so that the learning rate gradually decreases as the training progresses to improve the stability of the training. In the end, the accuracy of the neural network on the test set reached 99.05%, which is much higher than logistic regression, indicating that the neural network can learn data features more effectively and achieve higher classification performance.
 
@@ -30,3 +31,17 @@ Forward propagation and backpropagation are implemented. During the training pro
 | 95    | 0.0529 | 0.000308 |
 
 **Neural Network Accuracy: 0.9905**
+
+
+# Task2
+## Transformer Model Overview
+
+This notebook implements a **Transformer-based sequence reversal model**. The model takes a numerical sequence as input and predicts its reversed version. Below is an overview of the key components:
+
+## Model components
+- **Token Embedding:** Maps input tokens to a dense representation.
+- **Positional Encoding:** Provides information about the position of tokens in the sequence to the model.
+- **Multi-Head Self-Attention:** Enables the model to focus on different parts of the input sequence.
+- **Feedforward Network (FFN):** Applies a two-layer neural network with a ReLU activation function.
+- **fully connected linear layer** maps the encoder output to logits.
+
