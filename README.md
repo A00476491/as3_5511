@@ -1,4 +1,34 @@
 # Task 1
+
+## Data Generation and Preprocessing Explanation
+
+This dataset consists of *10,000 randomly generated samples, each with **10 features*. The features are constructed as follows:
+
+- The *first 5 features* are randomly generated integers between 1 and 9.
+- The *last 5 features* are either:
+  - a *reversed version* of the first 5 features (labeled as 1), or  
+  - a *randomly shuffled version* of the first 5 features (labeled as 0).
+
+### Label Interpretation
+
+- 1: The second half of the sequence is a reversed copy of the first half.
+- 0: The second half of the sequence is a randomly shuffled version of the first half.
+
+### Data Splitting
+
+The dataset is split into:
+
+- *80% training data*
+- *20% testing data*
+
+This is done using train_test_split from sklearn.model_selection with a fixed random seed for reproducibility (random_state=42).
+
+### Summary
+
+| Feature Range | Sequence Length | Label Meaning | Split Ratio |
+|---------------|------------------|----------------|-------------|
+| 1 to 9        | 10 (5 + 5)       | 1 = reversed, 0 = shuffled | 80% train / 20% test |
+
 ## Logistic regression model:
 
 This part uses the binary classification model - logistic regression as the benchmark model. I first put the data of the training set into the logistic regression model and let the model automatically find the most suitable straight line. Next, I applied the trained model to the test data to observe the accuracy of the prediction, so as to obtain a benchmark accuracy. This provides a reference benchmark for the results obtained by the subsequent neural network.
