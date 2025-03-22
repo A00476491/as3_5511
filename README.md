@@ -30,3 +30,20 @@ Forward propagation and backpropagation are implemented. During the training pro
 | 95    | 0.0529 | 0.000308 |
 
 **Neural Network Accuracy: 0.9905**
+
+# 5. Explaining "Self-Learning" to Your Boss
+Here’s how you might explain the concept of “self-learning” in the context of backpropagation to someone unfamiliar with neural networks:
+
+**Explanation:**
+
+“In a neural network, the term ‘self-learning’ refers to the process of the model improving itself over time by learning from its mistakes. Here’s how it works:
+
+**Initial Guess:** The neural network starts by making an initial prediction (which is often wrong). This is based on random weights assigned at the beginning.
+
+**Error Calculation:** After making the prediction, the network compares the prediction to the actual answer (the label). It calculates how wrong the prediction was, and this difference is called the error.
+
+**Learning from Mistakes (Backpropagation):** The network uses a method called backpropagation to adjust its weights. It essentially asks, ‘Which weights caused the biggest errors?’ and adjusts those weights to reduce the error in future predictions.
+
+**Iteration:** The network repeats this process many times, gradually improving its predictions as it ‘learns’ from its past mistakes. The more data it sees, the better it becomes at making accurate predictions.
+
+In summary, ‘self-learning’ is just the model figuring out how to adjust itself based on its errors so it can predict better in the future.”
